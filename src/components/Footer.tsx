@@ -23,17 +23,17 @@ export function Footer() {
             <h3 className="text-lg mb-4 text-white" style={{ fontWeight: 600 }}>Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-accent transition-colors duration-200">
+                <a href="https://dubai.acm.org/events/" className="text-sm text-muted-foreground hover:text-accent transition-colors duration-200">
                   About the Event
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-accent transition-colors duration-200">
+                <a href="https://dubai.acm.org/events/" className="text-sm text-muted-foreground hover:text-accent transition-colors duration-200">
                   Schedule
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-accent transition-colors duration-200">
+                <a href="https://forms.gle/fGRzDFix7PpSU2MbA" className="text-sm text-muted-foreground hover:text-accent transition-colors duration-200">
                   Registration
                 </a>
               </li>

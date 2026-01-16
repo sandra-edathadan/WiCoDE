@@ -100,17 +100,23 @@ export function HeroSection() {
             </div>
           </div>
 
-          <motion.button
-            className="group relative inline-flex items-center gap-3 px-8 py-4 bg-accent text-accent-foreground overflow-hidden transition-all duration-300 hover:gap-4"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+          <a
+            href="https://forms.gle/fGRzDFix7PpSU2MbA"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <span className="relative z-10 tracking-wider uppercase text-sm" style={{ fontWeight: 600 }}>
-              Register Now
-            </span>
-            <ArrowRight className="relative z-10 w-5 h-5" />
-            <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300" />
-          </motion.button>
+            <motion.button
+              className="group relative inline-flex items-center gap-3 px-8 py-4 bg-accent text-accent-foreground overflow-hidden transition-all duration-300 hover:gap-4"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <span className="relative z-10 tracking-wider uppercase text-sm" style={{ fontWeight: 600 }}>
+                Register Now
+              </span>
+              <ArrowRight className="relative z-10 w-5 h-5" />
+              <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300" />
+            </motion.button>
+          </a>
         </motion.div>
       </div>
     </section>

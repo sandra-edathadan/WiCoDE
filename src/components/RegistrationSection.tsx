@@ -93,6 +93,11 @@ export function RegistrationSection() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="text-center"
             >
+            <a
+              href="https://forms.gle/fGRzDFix7PpSU2MbA"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button className="group relative inline-flex items-center gap-4 px-12 py-6 bg-accent text-accent-foreground overflow-hidden transition-all duration-300 hover:gap-6 hover:shadow-2xl hover:shadow-accent/30">
                 <span className="relative z-10 text-lg uppercase tracking-widest" style={{ fontWeight: 700 }}>
                   Register Now
@@ -107,10 +112,8 @@ export function RegistrationSection() {
                   <div className="absolute inset-0 bg-accent blur-xl" />
                 </div>
               </button>
+            </a>
 
-              <p className="text-sm text-muted-foreground mt-6">
-                Registration link will be available soon
-              </p>
             </motion.div>
 
             {/* Event details reminder */}
