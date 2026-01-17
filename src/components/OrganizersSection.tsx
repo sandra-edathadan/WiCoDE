@@ -56,7 +56,7 @@ export function OrganizersSection() {
           {/* ACM BPDC */}
           <div className="group flex flex-col items-center gap-4">
             <a
-                href="https://dubai.acm.org/"
+                href="https://www.acmbpdc.org/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-48 aspect-[3/2] border border-accent/30 bg-secondary/20 
