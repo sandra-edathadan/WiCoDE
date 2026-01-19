@@ -64,12 +64,12 @@ export function OverviewSection() {
 
           <div className="pt-6 grid grid-cols-2 gap-8">
             <div>
-              <div className="text-5xl text-accent mb-2" style={{ fontWeight: 700 }}>2</div>
-              <div className="text-sm text-muted-foreground uppercase tracking-wider">Days</div>
+              <div className="text-5xl text-accent mb-2" style={{ fontWeight: 700 }}>15+</div>
+              <div className="text-sm text-muted-foreground uppercase tracking-wider">Expected Universities</div>
             </div>
             <div>
               <div className="text-5xl text-accent mb-2" style={{ fontWeight: 700 }}>100+</div>
-              <div className="text-sm text-muted-foreground uppercase tracking-wider">Participants</div>
+              <div className="text-sm text-muted-foreground uppercase tracking-wider">Expected Participants</div>
             </div>
           </div>
         </motion.div>

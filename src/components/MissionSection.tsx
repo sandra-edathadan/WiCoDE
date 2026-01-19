@@ -5,23 +5,23 @@ import { Target, Users, Share2, Handshake } from 'lucide-react';
 const objectives = [
   {
     icon: Target,
-    title: 'Amplify Women\'s Leadership',
-    description: 'Elevate and showcase women leaders making impact in technology and computing.'
+    title: 'Support UAE Women in Tech',
+    description: 'Align with UAE Vision 2030 by encouraging women’s participation and leadership in STEM and digital innovation.'
   },
   {
     icon: Users,
-    title: 'Promote Diversity & Inclusion',
-    description: 'Create an inclusive space that celebrates diverse perspectives and experiences.'
+    title: 'Build Industry-Ready Skills',
+    description: 'Equip women with practical computing and problem-solving skills relevant to the UAE’s growing tech economy.'
   },
   {
     icon: Share2,
-    title: 'Enable Knowledge Sharing',
-    description: 'Facilitate the exchange of ideas, research, and innovations across the community.'
+    title: 'Bridge Academia & Industry',
+    description: 'Create pathways between universities, research, and the UAE tech sector through talks, workshops, and collaboration.'
   },
   {
     icon: Handshake,
-    title: 'Foster Mentorship',
-    description: 'Build lasting connections between emerging and established professionals.'
+    title: 'Enable Mentorship & Career Access',
+    description: 'Connect students with professionals and mentors to support career growth within the UAE and global tech ecosystem.'
   }
 ];
 
@@ -32,7 +32,8 @@ export function MissionSection() {
       <div className="absolute left-0 top-1/2 -translate-y-1/2 w-96 h-96 bg-[#E879F9]/5 rounded-full blur-3xl" />
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="grid lg:grid-cols-[1fr,1.5fr] gap-16 items-center">
+        <div className="flex flex-col gap-12">
+
           {/* Left column */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -46,7 +47,7 @@ export function MissionSection() {
             </div>
             
             <h2 className="text-5xl md:text-6xl lg:text-7xl tracking-tight leading-tight" style={{ fontWeight: 700 }}>
-              <span className="text-white">Key Objectives</span>
+              <span className="text-white">Goals</span>
             </h2>
 
             <p className="text-xl text-muted-foreground mt-8 leading-relaxed">
@@ -60,7 +61,7 @@ export function MissionSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="space-y-4"
+            className="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-4"
           >
             {objectives.map((objective, index) => (
               <motion.div
@@ -69,7 +70,7 @@ export function MissionSection() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
-                className="group flex items-start gap-6 p-6 bg-secondary/30 border border-border hover:border-accent/50 hover:bg-secondary/50 transition-all duration-300"
+                className="group flex items-start gap-6 p-6 bg-secondary/30 border border-border hover:border-accent/50 hover:bg-secondary/50 transition-all duration-300 min-w-[320px] md:min-w-[380px] snap-start"
               >
                 <div className="flex-shrink-0 mt-1">
                   <div className="p-3 bg-accent/10 border border-accent/20 group-hover:bg-accent/20 transition-colors duration-300">
@@ -80,7 +81,8 @@ export function MissionSection() {
                   <div className="text-xl text-white group-hover:text-accent transition-colors duration-300 mb-2" style={{ fontWeight: 600 }}>
                     {objective.title}
                   </div>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-muted-foreground leading-relaxed text-justify">
+
                     {objective.description}
                   </p>
                 </div>
