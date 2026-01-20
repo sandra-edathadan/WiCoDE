@@ -61,7 +61,12 @@ export function MissionSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-4"
+            className="
+              flex flex-col gap-4
+              md:flex-row md:gap-6
+              md:overflow-x-auto md:snap-x md:snap-mandatory
+              pb-4
+            "
           >
             {objectives.map((objective, index) => (
               <motion.div
@@ -70,7 +75,7 @@ export function MissionSection() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
-                className="group flex items-start gap-6 p-6 bg-secondary/30 border border-border hover:border-accent/50 hover:bg-secondary/50 transition-all duration-300 min-w-[320px] md:min-w-[380px] snap-start"
+                className="group flex items-start gap-6 p-6 bg-secondary/30 border border-border hover:border-accent/50 hover:bg-secondary/50 transition-all duration-300 w-full md:min-w-[380px] md:w-auto snap-start"
               >
                 <div className="flex-shrink-0 mt-1">
                   <div className="p-3 bg-accent/10 border border-accent/20 group-hover:bg-accent/20 transition-colors duration-300">
@@ -81,7 +86,7 @@ export function MissionSection() {
                   <div className="text-xl text-white group-hover:text-accent transition-colors duration-300 mb-2" style={{ fontWeight: 600 }}>
                     {objective.title}
                   </div>
-                  <p className="text-muted-foreground leading-relaxed text-justify">
+                  <p className="text-muted-foreground leading-relaxed text-left md:text-justify">
 
                     {objective.description}
                   </p>
