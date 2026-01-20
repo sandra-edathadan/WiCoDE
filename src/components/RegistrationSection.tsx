@@ -75,7 +75,7 @@ export function RegistrationSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="grid md:grid-cols-2 gap-4 mb-12"
+              className="mx-auto grid md:grid-cols-2 gap-4 mb-12 max-w-2xl"
             >
               {benefits.map((benefit, index) => (
                 <div key={index} className="flex items-start gap-3">
