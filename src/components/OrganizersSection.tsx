@@ -116,6 +116,30 @@ export function OrganizersSection() {
             ACM UoS
             </span>
           </div>
+
+          {/* ACM MaHE */}
+          <div className="group flex flex-col items-center gap-4">
+            <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-48 aspect-[3/2] border border-accent/30 bg-secondary/20 
+                flex items-center justify-center overflow-hidden
+                hover:border-accent hover:bg-secondary/40 
+                transition-all duration-300"                >              
+              <img
+                src="/logos/ACM-MAHE.png"
+                alt="ACM-MAHE-logo"
+                className="h-full w-full object-contain p-2 transition-transform duration-300 group-hover:scale-105"
+              />
+            </a>
+            
+            <span className="text-xs text-muted-foreground uppercase tracking-wider whitespace-nowrap">
+              ACM MAHE
+            </span>
+          </div>
+
+
         </motion.div>
 
 
