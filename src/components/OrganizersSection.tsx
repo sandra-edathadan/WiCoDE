@@ -96,26 +96,6 @@ export function OrganizersSection() {
             </span>
           </div>
 
-          {/* ACM UoS */}
-          <div className="group flex flex-col items-center gap-4">
-            <a
-                href="https://www.sharjah.ac.ae/Academics/CI/ACM-Student-Chapter"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-48 aspect-[3/2] border border-accent/30 bg-secondary/20 
-                flex items-center justify-center overflow-hidden
-                hover:border-accent hover:bg-secondary/40 
-                transition-all duration-300"            >               
-              <img
-                src="/logos/ACM-UoS-Logo.png"
-                alt="ACM-UoS-logo"
-                className="h-full w-full object-contain p-6 transition-transform duration-300 group-hover:scale-105"
-              />
-            </a>
-            <span className="text-xs text-muted-foreground uppercase tracking-wider">
-            ACM UoS
-            </span>
-          </div>
 
           {/* ACM MaHE */}
           <div className="group flex flex-col items-center gap-4">
